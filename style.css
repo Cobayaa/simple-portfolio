@@ -1,0 +1,1149 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    background: whitesmoke;
+    transition: .5s;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+body.dark{
+    background: #2b2a33;
+    transition: .5s;
+}
+*{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+h2{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-top: 20%;
+}
+
+
+.text-home{
+    position: absolute;
+    margin-left: 5%;
+    z-index: 10;
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    color: #00001a;
+    transition: .7s ease-in-out;
+}
+.text-home2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin: 10% 0%;
+    transition: .7s ease-in-out;
+    padding-left: 45%;
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.container{
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    background: white;
+    padding: 10px 100px;
+    transition: .5s ease-in-out;
+    z-index: 400000;
+    box-shadow: 0px 4px 16px -3px rgba(0,0,0,0.75);
+    backdrop-filter: blur(2px);
+}
+
+.container.sticky{
+    padding: 5px 100px;
+    background: rgba(255, 255, 255, 0.705);
+    transition: .5s ease-in-out;
+}
+body.dark .container.sticky{
+    padding: 5px 100px;
+    background: rgba(255, 255, 255, 0.548);
+    backdrop-filter: blur(2px);
+    transition: .5s ease-in-out;
+}
+
+.container .logoandimg{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.container .logoandimg{
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    color: #00001a;
+    letter-spacing: 10px;
+}
+
+.container ul{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    gap: 10%;
+}
+.container ul li{
+    position: relative;
+    list-style: none;
+}
+.container ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #181818;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    padding: 5px  15px;
+    transition: .5s;
+    border-radius: 10px;
+}
+.container ul li a:hover,
+.container ul li a.active{
+    background:#181818;
+    color: white;
+    transition: 0.5s;
+}
+.darkswitch{
+    position: relative;
+    background: royalblue;
+    display: flex;
+    cursor: pointer;
+    outline: none;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+}
+.darkswitch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: white;
+}
+.darkswitch::after{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: unset;
+    width: 30px;
+    height: 30px;
+    background: whitesmoke;
+    border-radius: 50%;
+    transition: all .5s ease;
+    box-shadow: 0 0 1.5px 1.5px rgba(0, 0, 0, .5);
+}   
+.darkswitch.active{
+    background: orange;
+    transition: .5s;
+}
+.darkswitch.active::after{
+    left: unset;
+    right: 0;
+    transition: .5s;
+}
+ion-icon{
+    font-size: 15px;
+    padding-top: 24%;
+}
+
+.parallax-container{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    margin-top: 35%;
+}
+.parallax-box{
+    position: relative; 
+    display: flex;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    width: 100%;
+}
+
+.parallax-box .sky{
+    position: absolute;
+    bottom: 0;
+    object-fit: contain;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.parallax-box .earth{
+    position: absolute;
+    bottom: 0;
+    object-fit: contain;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+.parallax-box .earth2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 7;
+}
+
+.parallax-text{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    object-fit: contain;
+}
+.name{
+    position: absolute;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'poppins',sans-serif;
+    color:#00001a;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 28.5%;
+    margin-top: 20%;
+    z-index: 4;
+    transition: 0.03s ease-in;
+}
+.tec{
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: 'poppins',sans-serif;
+    color:rgb(119, 53, 53);
+    text-align: center;
+    margin-top: 31%;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 20px;
+    padding-left: 17%;
+    z-index: 6;
+    transition: 0.03s ease-in;
+}
+
+.expe{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.experience{
+    position: absolute;
+    z-index: 6;
+    font-family: 'poppins',sans-serif;
+    transition: 0.03s ease-in;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 40%;
+    margin-left: 20%;
+    padding: 5px 15px;
+    color: white;
+    background: rgba(255, 166, 0, 0.774);
+    border-radius:10px;
+}
+
+.experience2{
+    position: absolute;
+    z-index: 6;
+    font-family: 'poppins',sans-serif;
+    transition: 0.03s ease-in;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 40%;
+    margin-left: 65%;
+    padding: 5px 15px;
+    color: white;
+    background: rgba(65, 105, 225, 0.774);
+    border-radius:10px;
+}
+
+
+body.dark .cont{
+    position: relative;
+    transition: .5s;
+    background: transparent;
+    padding-top:-27%;
+    padding-bottom:3%;
+}
+
+body.dark .cont .text .spacing{
+    position: relative;
+    transition: .5s;
+    color: white;
+}
+body.dark .cont .text h3{
+    position: relative;
+    transition: .5s;
+    color: white;
+}
+body.dark .cont .text p{
+    position: relative;
+    transition: .5s;
+    color: white;
+}
+body.dark .cont .text .link{
+    position: relative;
+    transition: .5s;
+    color: black;
+    background: white;
+}
+
+body.dark .container{
+    background: #2b2a33;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 100px;
+    transition: .5s;
+    z-index: 400000;
+    box-shadow: 0px 4px 16px -3px rgba(255, 255, 255, 0.781);
+    
+}
+body.dark .container .logoandimg{
+    position: relative;
+    color: white;
+    transition: .5s;
+}
+body.dark .container ul li a{
+    position: relative;
+    color: whitesmoke;
+    transition: .5s;
+}
+
+body.dark .container ul li a.active,
+body.dark .container ul li a:hover{
+    position: relative;
+    color: black;
+    background: whitesmoke;
+}
+
+.services_container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: whitesmoke;
+    margin-top:-1%;
+}
+
+body.dark .services_container{
+    background: #222222;
+}
+.services_container .service_box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.services_container .service_box .box{
+    position: relative;
+    width: 350px;
+    height: 280px;
+    border-radius: 20px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.services_container .service_box .box .box_text{
+    color: black;
+}
+
+body.dark .services_container .service_box .box{
+    background: #2b2a33;
+}
+
+body.dark .services_container .service_box .box .box_text{
+    color: white;
+}
+
+body.dark .services_container .service_box .box ion-icon{
+    color: white;
+}
+
+body.dark .services_container .service_box .box .p_text{
+    color: white;
+}
+
+body.dark .services_container .services{
+    color: white;
+}
+
+.cont_services{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: whitesmoke;
+}
+.services{
+    position: relative;
+    color: black;
+    font-family: 'Poppins',sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-left: 5%;
+}
+.clascon{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:black;
+
+}
+.services_container .service_box .box .icon-content{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services_container .service_box .box ion-icon{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+    margin-top: -23%;
+}
+
+.services_container .service_box .box .p_text{
+    position: relative;
+    color: black;
+    font-family: 'Poppins',sans-serif;
+    font-size: 13px;
+    padding: 0px 10px;
+}
+
+.about{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8% 10%;
+    border-radius: 20px;
+}
+
+.textabout{
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow: hidden;
+}
+.textabout .hire:hover{
+    position: relative;
+    overflow: hidden;
+    color: #03c04a;
+    background: transparent;
+    border: 2px solid #03c04a;
+}
+.textabout .mon{
+    position: relative;
+    padding-top: 5%;
+    text-align: left;
+}
+.textabout .hire{
+    position: relative;
+    text-align: left;
+    margin-top: 5%;
+    justify-content: left;
+    align-items: left;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 15px;
+    background: #03c04a;
+    transition: .2s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.about h1{
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+.about p{
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    overflow: hidden;
+    text-align: justify;
+}
+.contens{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    z-index: 300; 
+    background: white;  
+    border-radius: 20px;
+    overflow: hidden;
+}
+.tecnologies{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+}
+.tecnologies .cont_img{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 2%;
+}
+.tecnologies .imagenes{
+    position: relative;
+    width: 45px;
+    height: 50px;
+    background: rgb(231, 231, 231);
+    padding: 2px 2px;
+    border-radius: 10px;
+    opacity: 70%;
+}
+body.dark .tecnologies .h2{
+    position: relative;
+    color: white;
+}
+.tecnologies .h2{
+    position: relative;
+    color: black;
+    opacity: 70%;
+    font-family: 'Poppins',sans-serif;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 1%;
+}
+body.dark .contens{
+    position: relative;
+    background: #222222;
+    color: white;
+    transition: .5s;
+}
+.about .contens .jean{
+    position: relative;
+    width: 35%;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    position: relative;
+    height: 500px;
+    width: 900px;
+    margin: 9rem auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.login-info-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    background: white;
+}
+
+.image-container {
+    width: 50%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: contain;
+}
+
+.title{
+    text-transform: capitalize;
+    font-size: 2.25rem;
+    font-weight: 600;
+    font-family: 'poppins',sans-serif;
+    letter-spacing: 1px;
+    color: black;
+    margin-top: 15%;
+}
+.ema{
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'poppins',sans-serif;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.548);
+    overflow: hidden;
+}
+
+body.dark .ema{
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'poppins',sans-serif;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.548);
+    overflow: hidden;
+}
+
+
+body.dark .title{
+    position: relative;
+    color: white;
+}
+
+.social-login-element:hover {
+    background-color: #fff;
+}
+
+.login-info-container > p {
+    font-size: 1.25em;
+    margin-top: 1.5em;
+}
+
+.inputs-container {
+    height: 55%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boton{
+    font-size: 1em;
+    padding: 5px 15px;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: #2b2a33;
+    cursor: pointer;
+}
+
+body.dark .boton{
+    background: #2b2a33;
+    color: white;
+    cursor: pointer;
+}
+.input {
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    height: 3.125rem;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    background: #424242;
+    color: white; 
+}
+.input1 {
+    padding-left: 20px;
+    border: none;
+    min-width: 348px;
+    min-height: 79px;
+    max-width: 348px;
+    max-height: 79px;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    background: #424242;
+    color: white;
+}
+
+.input:hover {
+    border: 2px solid white;
+}
+.input1:hover {
+    border: 2px solid white;
+}
+
+.inputs-container p {
+    margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .login-container {
+        width: 70%;
+        margin-top: 3rem;
+    }
+    .login-info-container {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .image-container {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 650px) {
+    .login-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login-container {
+        height: 90%;
+    }
+
+    .social-login {
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+    }
+
+    .login-info-container > p {
+        margin: 0;
+    }
+}
+body.dark .login-info-container{
+    background: #222222;
+}
+
+body.dark .login-container{
+    background: #222222;
+    box-shadow: 0px 4px 17px 0px rgba(255, 255, 255, 0.75);
+}
+
+body.dark .input{
+    background: #2b2a33;
+}
+body.dark .input1{
+    background: #2b2a33;
+}
+.footer{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    margin-top: 6%;
+    padding-bottom: 2%;
+    background: white;
+    overflow: hidden;
+}
+
+.cont-footer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cont-links{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.links{
+    position: relative;
+    padding-left: 1%;
+    text-decoration: none;
+    color: #353535;
+    font-family: 'poppins',sans-serif;
+    font-weight: 300;
+}
+.rights{
+    color: #353535;
+    font-family: 'poppins',sans-serif;
+    font-weight: 300;
+}
+body.dark .footer{
+    background: #222222;
+}
+
+body.dark .links{
+    color: white;
+}
+
+body.dark .rights{
+    color: white;
+}
+.social{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ig{
+    position: relative;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.ig img{
+    position: relative;
+    width: 2%;
+    margin-left: 1%;
+}
+
+body.dark .uu{
+    color: white;
+}
+body.dark .vv{
+    color: white;
+}
+.portfolio-content{
+    position: relative;
+    width: 350px;
+    height: 280px;
+    border-radius: 20px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    overflow: hidden;
+}
+.portfolio-content::after{
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    width: 32rem;
+    height: 32rem;
+    background: #0000008e;
+    backdrop-filter: blur(1.5px);
+}
+
+.best{
+    position: relative;
+    padding-top: 4%;
+}
+
+.img-portfolio{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+}
+.tt{
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+}
+.portfolio-text{
+    position: relative;
+    margin:-16% auto;
+    z-index: 6;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.span{
+    position: absolute;
+    font-size: 100px;
+    z-index: 100;
+    font-weight: 600;
+    font-family: 'poppins',sans-serif;
+    color: rgba(255, 255, 255, 0.39);
+    margin: -30% 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.portfolio-text h1{
+    position: relative;
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    z-index: 5;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.portfolio-text p{
+    position: relative;
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    z-index: 5;
+    color: white;
+    margin-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.j{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 21;
+}
+
+.seemore{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+    background: black;
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+}
+.seemore:hover{
+    transition: .5s ease-in-out;
+    background:white;
+    color:black;
+}
+body.dark .best{
+    background: #222222;
+}
+
+.vv{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 2.3rem;
+    font-weight: 300;
+    font-family: 'poppins',sans-serif;
+    color: black;
+    z-index: 1;
+    letter-spacing: 25px;
+}
+
+
+.container .toggle{
+    position: relative;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    display: none;
+}
+
+body.dark .toggle{
+    color: white;
+}
+
+
+/*------------------- responsive mobile-------------------*/
+
+@media screen and (max-width:768px) {
+    
+    .parallax-container{
+        position: relative;
+        margin-top: -16%;
+    }
+    .name{
+        margin-top: 52.5%;
+        font-size: 2rem;
+    }
+    .tec{
+        margin-top: 64.5%;
+        font-size: 1.6rem;
+        margin-left: -3%;
+    }
+    .about{
+        overflow: hidden;
+    }
+    .experience, .experience2{
+        margin-top: 69%;
+        font-size: .8rem;
+    }
+    
+    .text-home{
+        margin-top: 50%;
+        font-size: 3rem;
+        margin-left: 8%;
+    }
+    .text-home2{
+        margin-top: 2%;
+        display: none;
+        font-size: 2rem;
+        margin-left: -14%;
+        z-index: 10;
+    }
+
+    .container{
+        position: fixed;
+        padding: 0 10%;
+        z-index: 44;
+    }
+    .darkswitch{
+        margin-left: 40%;
+    }
+    .logoandimg{
+        z-index: 29999;
+    }
+    .nav{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(49, 49, 49, 0.644);
+        backdrop-filter: blur(14px);
+        margin-left: -100%;
+        transition: all .5s ease;
+    }
+
+    .nav.responsive{
+        margin-left: 0;
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+    .nav_toggle .toggle{
+        position: relative;
+        display: block;
+        margin-left: 80%;
+        z-index: 2000;
+    }
+
+    .input1{
+        min-width: 410px;
+        min-height: 100px;
+        max-width: 410px;
+        max-height: 100px;
+    }
+    .tecnologies{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    .tecnologies .h2{
+        font-size: 1.4rem;
+    }
+    .cont_img .imagenes{
+        position: relative;
+        width: 30px;
+        height: 40px;
+        object-fit: contain;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/*------------------- responsive deskop-------------------*/
+
+@media screen and (min-width:1433px){
+    .parallax-container{
+        margin-top: 3.1%;
+    }
+    .text-home{
+        margin-top: 29%;
+        padding-left: 12%;
+    }
+    .text-home2{
+        margin-top: 9%;
+        padding-left: 47%;
+    }
+    .name{
+        margin-top: 25%;
+    }
+    .tec{
+        margin-top: 35%;
+    }
+    .experience{
+        margin-top: 43%;
+    }
+    .experience2{
+        margin-top: 43%;
+    }
+}
+
+@media screen and (min-width:1181px){
+    .parallax-container{
+        margin-top: 3%;
+    }
+    .text-home{
+        margin-top: 29%;
+        font-size: 4rem;
+        padding-left: 15%;
+    }
+
+    .name{
+        margin-top: 36%;
+    }
+    .tec{
+        margin-top: 47%;
+        font-size: 3.5rem;
+    }
+    .experience{
+        margin-top: 54%;
+    }
+    .experience2{
+        margin-top: 54%;
+    }
+}
